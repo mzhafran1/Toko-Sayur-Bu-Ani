@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda - Toko Sayur Bu Ani</title>
+    <link rel="stylesheet" href="style_praktek.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <span class="logo">🥬 Sayur Segar Bu Ani</span>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="#pemesanan">Pemesanan <span class="cart-badge" id="cart-count">0</span></a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <section id="beranda" class="hero">
+      <div class="hero-teks">
+        <h1>Sayur Segar,<br />Pemesanan Mudah, Harga Ceria </h1>
+        <p>
+          Langsung dari petani lokal. Pilih, tambah ke keranjang, dan pesan sekarang.
+        </p>
+        <a href="#pemesanan" class="tombol">Pesan Sekarang</a>
+      </div>
+
+      <img src="images/hero.jpg" alt="Sayur Segar Bu Ani" class="hero-img" />
+    </section>
+
+    <section id="produk" class="section-produk">
+      <h2>Produk Kami</h2>
+      <p class="subjudul">Segar, hemat, dan siap dimasukkan ke keranjang.</p>
+      <div class="produk-grid">
+        <article class="produk-item">
+          <div class="produk-label">🌿 Bayam Hijau</div>
+          <p class="produk-satuan">per ikat (~200gr)</p>
+          <strong class="produk-harga">Rp 3.000</strong>
+          <button class="btn-tambah" data-product="Bayam Hijau" data-price="3000">+ Tambah</button>
+        </article>
+        <article class="produk-item">
+          <div class="produk-label">🥕 Wortel</div>
+          <p class="produk-satuan">per kg</p>
+          <strong class="produk-harga">Rp 8.000</strong>
+          <button class="btn-tambah" data-product="Wortel" data-price="8000">+ Tambah</button>
+        </article>
+        <article class="produk-item">
+          <div class="produk-label">🌿 Kangkung</div>
+          <p class="produk-satuan">per ikat (~300gr)</p>
+          <strong class="produk-harga">Rp 3.000</strong>
+          <button class="btn-tambah" data-product="Kangkung" data-price="3000">+ Tambah</button>
+        </article>
+        <article class="produk-item">
+          <div class="produk-label">🍅 Tomat Merah</div>
+          <p class="produk-satuan">per kg</p>
+          <strong class="produk-harga">Rp 12.000</strong>
+          <button class="btn-tambah" data-product="Tomat Merah" data-price="12000">+ Tambah</button>
+        </article>
+        <article class="produk-item">
+          <div class="produk-label">🌶️ Cabai Merah</div>
+          <p class="produk-satuan">per ons</p>
+          <strong class="produk-harga">Rp 5.000</strong>
+          <button class="btn-tambah" data-product="Cabai Merah" data-price="5000">+ Tambah</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="pemesanan" class="section-pemesanan">
+      <div class="section-header">
+        <h2>Pemesanan & Keranjang</h2>
+        <p class="subjudul">Tambah produk, atur keranjang, lalu selesaikan pesananmu.</p>
+      </div>
+
+      <div class="pemesanan-wrap">
+        <div class="cart-card">
+          <div class="card-header">
+            <div>
+              <h3>Keranjang Belanja</h3>
+              <p id="cart-status">Keranjang masih kosong.</p>
+            </div>
+          </div>
+
+          <ul class="cart-list" id="cart-list">
+            <li class="cart-empty">Keranjangmu masih kosong.</li>
+          </ul>
+
+          <div class="cart-summary">
+            <div class="cart-total">
+              <span>Total</span>
+              <strong id="cart-total">Rp 0</strong>
+            </div>
+            <button type="button" class="tombol tombol-full" id="kosongkan-keranjang">Kosongkan Keranjang</button>
+          </div>
+        </div>
+
+        <div class="summary-card">
+          <h3>Form Pemesanan</h3>
+          <form id="order-form">
+            <div class="form-group">
+              <label for="order-nama">Nama Lengkap</label>
+              <input type="text" id="order-nama" name="order-nama" placeholder="Contoh: Andi Samsudin" required />
+            </div>
+            <div class="form-group">
+              <label for="order-telepon">Nomor WhatsApp</label>
+              <input type="tel" id="order-telepon" name="order-telepon" placeholder="Contoh: 08123456789" required />
+            </div>
+            <div class="form-group">
+              <label for="order-alamat">Alamat Pengiriman</label>
+              <textarea id="order-alamat" name="order-alamat" rows="4" placeholder="Tulis alamat lengkap kamu" required></textarea>
+            </div>
+            <button type="submit" class="tombol tombol-full">✅ Pesan Sekarang</button>
+            <p id="order-sukses">✅ Pesanan berhasil dikirim! Kami akan segera hubungi kamu.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 Toko Sayur Bu Ani &mdash; Bogor, Jawa Barat</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

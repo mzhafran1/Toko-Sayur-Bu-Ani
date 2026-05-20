@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Toko Sayur Bu Ani</title>
+    <link rel="stylesheet" href="style_praktek.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <span class="logo">🥬 Sayur Segar Bu Ani</span>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="index.html#pemesanan">Pemesanan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero hero-kontak">
+      <div class="hero-teks">
+        <h1>Kontak Toko Sayur Bu Ani</h1>
+        <p>
+          Ada pertanyaan tentang pesanan atau stok sayur? Tim kami siap bantu kamu.
+        </p>
+        <a href="index.html#pemesanan" class="tombol">Lihat Keranjang</a>
+      </div>
+    </section>
+
+    <section id="kontak" class="section-kontak">
+      <h2>Hubungi Kami 📞</h2>
+      <p class="subjudul">Ada pertanyaan? Kirim pesan di bawah ini.</p>
+      <div class="kontak-wrap">
+        <div class="kontak-info">
+          <h3>Informasi Toko</h3>
+          <ul>
+            <li>📍 Jl. Raya Bogor No. 33, Bogor</li>
+            <li>📱 WhatsApp: 0812-3456-7890</li>
+            <li>📧 tokosayurbuani@gmail.com</li>
+            <li>⏰ Senin–Minggu, 06.00–14.00 WIB</li>
+          </ul>
+          <div class="sosmed">
+            <a href="#"><img src="https://cdn.simpleicons.org/instagram" alt="Instagram" /></a>
+            <a href="#"><img src="https://cdn.simpleicons.org/tiktok" alt="TikTok" /></a>
+            <a href="#"><img src="https://cdn.simpleicons.org/shopee" alt="Shopee" /></a>
+          </div>
+        </div>
+
+        <form id="form-kontak" class="contact-form">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Contoh: Andi Samsudin" required />
+          </div>
+          <div class="form-group">
+            <label for="telepon">Nomor WhatsApp</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="Contoh: 08123456789" required />
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
+          </div>
+          <button type="submit" class="tombol tombol-full">📨 Kirim Pesan</button>
+          <p id="pesan-sukses">✅ Pesan berhasil dikirim! Kami akan segera jawab.</p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Toko Sayur Bu Ani &mdash; Bogor, Jawa Barat</p>
+      <p>Dibuat dengan <strong>HTML, CSS &amp; JavaScript</strong> 💛</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
